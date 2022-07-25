@@ -506,20 +506,21 @@ Baixe  e descompacte o repositorio ou clone:
 
 1 - Na raiz do projeto onde contém o Dockerfile
 
-
+```docker
 docker build --tag backend .
-
+```
 
 Para verificar se a imagem foi gerado digite:
 
-
+```docker
 docker images
-
+```
 
 2-Para rodar o container 
 
-
+```docker
 docker run -d -p 8080:8080 backend
+```
 
 
 Se tudo correr bem será impresso o id do container no terminal
@@ -528,6 +529,14 @@ Se tudo correr bem será impresso o id do container no terminal
 Depois de alguns segundos digite a seguinte url de teste
 (Este procedimento foi realizado na minha maquina local):
 http://localhost:8080/api/pessoa
+
+
+Url banco  : http://localhost:8080/h2-ui
+
+
+Obs: Altere  a JDBC URL  para : jdbc:h2:mem:attornatus
+
+Url Swagger : http://localhost:8080/swagger-ui/index.html#/
 
 
 
